@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/fintrack
+    username: postgres
+    password: example
+
+  jpa:
+    hibernate:
+      ddl-auto: update

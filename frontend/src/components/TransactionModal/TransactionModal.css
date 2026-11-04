@@ -1,0 +1,139 @@
+.transaction-modal-overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+}
+
+.transaction-modal {
+  width: 100%;
+  max-width: 520px;
+  padding: 28px;
+  border: 1px solid #292929;
+  border-radius: 16px;
+  background-color: #181818;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+}
+
+.transaction-modal-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+
+.transaction-modal-header h2 {
+  margin-bottom: 8px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.transaction-modal-header p {
+  color: #a1a1aa;
+  font-size: 13px;
+}
+
+.transaction-close-button {
+  border: none;
+  background: transparent;
+  color: #71717a;
+  font-size: 26px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.transaction-close-button:hover {
+  color: #ffffff;
+}
+
+.transaction-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-bottom: 18px;
+}
+
+.transaction-form-group label {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.transaction-form-group input,
+.transaction-form-group select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 11px 12px;
+  border: 1px solid #292929;
+  border-radius: 8px;
+  outline: none;
+  background-color: #101010;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.transaction-form-group input:focus,
+.transaction-form-group select:focus {
+  border-color: #7c3aed;
+}
+
+.transaction-form-group input::placeholder {
+  color: #52525b;
+}
+
+.transaction-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.transaction-modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 28px;
+}
+
+.transaction-cancel-button,
+.transaction-save-button {
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.transaction-cancel-button {
+  border: 1px solid #292929;
+  background: transparent;
+  color: #a1a1aa;
+}
+
+.transaction-cancel-button:hover {
+  background-color: #222222;
+  color: #ffffff;
+}
+
+.transaction-save-button {
+  border: none;
+  background-color: #7c3aed;
+  color: #ffffff;
+}
+
+.transaction-save-button:hover {
+  background-color: #6d28d9;
+}
+
+@media (max-width: 600px) {
+  .transaction-modal {
+    padding: 22px;
+  }
+
+  .transaction-form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}

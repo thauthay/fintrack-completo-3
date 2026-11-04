@@ -1,0 +1,14 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: finance-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/fintrack
+    username: postgres
+    password: example
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: update

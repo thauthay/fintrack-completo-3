@@ -1,0 +1,123 @@
+.categories-page {
+  width: 100%;
+}
+
+.categories-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.categories-header h2 {
+  margin-bottom: 8px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.categories-header p {
+  color: #a1a1aa;
+  font-size: 14px;
+}
+
+.add-category-button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #7c3aed;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.add-category-button:hover {
+  background-color: #6d28d9;
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.category-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px;
+  border: 1px solid #292929;
+  border-radius: 12px;
+  background-color: #181818;
+  transition: 0.2s;
+}
+
+.category-card:hover {
+  border-color: #3b2b5a;
+}
+
+.category-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: #2a2140;
+  font-size: 22px;
+}
+
+.category-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.category-info strong {
+  font-size: 15px;
+}
+
+.category-info span {
+  font-size: 12px;
+  color: #71717a;
+}
+.delete-category-button {
+  margin-left: auto;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  color: #ef4444;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.delete-category-button:hover {
+  background: rgba(239, 68, 68, 0.1);
+  color: #dc2626;
+}
+.category-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: auto;
+}
+
+.edit-category-button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  color: #7c3aed;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.edit-category-button:hover {
+  background: rgba(124, 58, 237, 0.1);
+}

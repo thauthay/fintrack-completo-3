@@ -1,0 +1,36 @@
+.summary-card {
+  flex: 1;
+  padding: 24px;
+  border: 1px solid #292929;
+  border-radius: 12px;
+  background-color: #181818;
+}
+
+.summary-card-title {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 14px;
+  color: #a1a1aa;
+}
+
+.summary-card-value {
+  font-size: 26px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.summary-card.income .summary-card-value {
+  color: #4ade80;
+}
+
+.summary-card.expense .summary-card-value {
+  color: #f87171;
+}
+
+.summary-card.balance {
+  border-color: #3b2b5a;
+}
+
+.summary-card.balance .summary-card-value {
+  color: #a78bfa;
+}

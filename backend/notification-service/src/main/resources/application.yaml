@@ -1,0 +1,14 @@
+server:
+  port: 8083
+
+spring:
+  application:
+    name: notification-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/fintrack
+    username: postgres
+    password: example
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: update

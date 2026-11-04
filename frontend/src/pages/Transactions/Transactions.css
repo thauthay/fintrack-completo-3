@@ -1,0 +1,125 @@
+.transactions-page {
+  width: 100%;
+}
+
+.transactions-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.transactions-header h2 {
+  margin-bottom: 8px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.transactions-header p {
+  color: #a1a1aa;
+  font-size: 14px;
+}
+
+.add-transaction-button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #7c3aed;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.add-transaction-button:hover {
+  background-color: #6d28d9;
+}
+
+.transactions-filters {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.transactions-filters input,
+.transactions-filters select {
+  padding: 10px 12px;
+  border: 1px solid #292929;
+  border-radius: 8px;
+  background-color: #181818;
+  color: #ffffff;
+  font-size: 14px;
+  outline: none;
+}
+
+.transactions-filters input {
+  flex: 1;
+}
+
+.transactions-filters input:focus,
+.transactions-filters select:focus {
+  border-color: #7c3aed;
+}
+
+.transactions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.transaction-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 20px;
+  border: 1px solid #292929;
+  border-radius: 12px;
+  background-color: #181818;
+  transition: 0.2s;
+}
+
+.transaction-card:hover {
+  border-color: #3b2b5a;
+}
+
+.transaction-icon {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: #2a2140;
+  font-size: 20px;
+}
+
+.transaction-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.transaction-info strong {
+  font-size: 15px;
+}
+
+.transaction-info span {
+  color: #71717a;
+  font-size: 12px;
+}
+
+.transaction-income,
+.transaction-expense {
+  margin-left: auto;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.transaction-income {
+  color: #22c55e;
+}
+
+.transaction-expense {
+  color: #ef4444;
+}
